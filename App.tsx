@@ -1,7 +1,7 @@
 import {StatusBar} from 'expo-status-bar';
 import React from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import NonSkiaDisplayCard from './src/components/NonSkiaDisplayCard';
+import NonSkiaCard from './src/components/NonSkiaCard';
 import DisplayCard from './src/components/SkiaDisplayCard';
 import {colors} from './src/sharedValues';
 
@@ -14,7 +14,7 @@ export default function App() {
         <Text style={styles.text}>Skia:</Text>
         <DisplayCard />
         <Text style={styles.text}>Non Skia:</Text>
-        <NonSkiaDisplayCard />
+        <NonSkiaCard />
       </View>
     </>
   );

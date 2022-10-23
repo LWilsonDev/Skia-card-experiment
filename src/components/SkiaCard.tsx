@@ -14,7 +14,11 @@ interface CardProps {
   canvasPadding: number;
 }
 
-export const Card: FC<CardProps> = ({cardHeight, cardWidth, canvasPadding}) => {
+export const SkiaCard: FC<CardProps> = ({
+  cardHeight,
+  cardWidth,
+  canvasPadding,
+}) => {
   return (
     <Canvas
       style={{

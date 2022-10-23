@@ -4,7 +4,7 @@ import {LinearGradient} from 'expo-linear-gradient';
 import CardText from './CardText';
 import {colors} from '../sharedValues';
 
-export default function NonSkiaDisplayCard() {
+export default function NonSkiaCard() {
   const {width} = useWindowDimensions();
 
   const cardWidth = width * 0.9;
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   button: {
     marginTop: 30,
     borderRadius: 10,
-    shadowColor: '#000',
+    shadowColor: colors.shadowDark,
     shadowOffset: {
       width: 5,
       height: 10,

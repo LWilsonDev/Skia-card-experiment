@@ -1,6 +1,6 @@
 import {useWindowDimensions, View, StyleSheet} from 'react-native';
 import React, {useState} from 'react';
-import {Card} from './Card';
+import {SkiaCard} from './SkiaCard';
 import CardText from './CardText';
 
 const DisplayCard = () => {
@@ -12,7 +12,7 @@ const DisplayCard = () => {
 
   return (
     <View style={styles.wrap}>
-      <Card
+      <SkiaCard
         cardHeight={textCardHeight}
         cardWidth={cardWidth}
         canvasPadding={canvasPadding}
